@@ -1,8 +1,6 @@
 ﻿using System;
 using BrainGames.CLI.Engine;
 
-// using BrainGames.Games;
-
 namespace BrainGames.CLI
 {
     class Program
