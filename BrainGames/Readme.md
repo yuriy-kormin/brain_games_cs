@@ -34,3 +34,6 @@ To run the games locally, follow these steps:
 ```bash
   dotnet run 
 ```
+
+## Example Gameplay
+[![asciicast](https://asciinema.org/a/ZnpYPAzfzNdCEaVEsGgTm9peX.svg)](https://asciinema.org/a/ZnpYPAzfzNdCEaVEsGgTm9peX)
