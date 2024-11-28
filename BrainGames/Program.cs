@@ -1,5 +1,4 @@
-﻿using System;
-using BrainGames.CLI.Engine;
+﻿using BrainGames.CLI.Engine;
 
 namespace BrainGames.CLI
 {
