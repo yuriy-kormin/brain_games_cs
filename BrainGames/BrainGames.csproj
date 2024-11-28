@@ -8,4 +8,9 @@
         <RootNamespace>brain_games</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+        <None Update="**\*">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
 </Project>
