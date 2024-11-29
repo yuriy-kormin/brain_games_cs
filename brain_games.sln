@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainGames", "BrainGames\BrainGames.csproj", "{D44BF3F1-384F-4C81-B7E6-DE455A88F57C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrainGames.Tests", "BrainGames.Tests\BrainGames.Tests.csproj", "{A857CBE1-CECA-4AE6-BC15-BA0B404AE44E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +15,11 @@ Global
 		{D44BF3F1-384F-4C81-B7E6-DE455A88F57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D44BF3F1-384F-4C81-B7E6-DE455A88F57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D44BF3F1-384F-4C81-B7E6-DE455A88F57C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A857CBE1-CECA-4AE6-BC15-BA0B404AE44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A857CBE1-CECA-4AE6-BC15-BA0B404AE44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A857CBE1-CECA-4AE6-BC15-BA0B404AE44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A857CBE1-CECA-4AE6-BC15-BA0B404AE44E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
