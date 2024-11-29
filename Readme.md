@@ -1,3 +1,6 @@
+[![tests](https://github.com/yuriy-kormin/brain_games_cs/actions/workflows/tests.yml/badge.svg)](https://github.com/yuriy-kormin/brain_games_cs/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/yuriy-kormin/brain_games_cs/graph/badge.svg?token=FWMSXNZ056)](https://codecov.io/gh/yuriy-kormin/brain_games_cs)
+
 # Brain Games 🎮
 A collection of simple and fun console games designed to challenge your brain!
 
