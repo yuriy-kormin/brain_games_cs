@@ -1,0 +1,34 @@
+name: Code Coverage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-and-coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0'
+
+    - name: Restore Dependencies
+      run: dotnet restore
+
+    - name: Run Tests with Coverage
+      run: dotnet test --no-build --collect:"XPlat Code Coverage" /p:CoverletOutputFormat=cobertura
+
+    - name: Upload Coverage to Codecov
+      uses: codecov/codecov-action@v5
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} 
+        files: ./BrainGames.Tests/TestResults/**/*.xml 
+        flags: unittests
+        fail_ci_if_error: true
+
