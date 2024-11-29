@@ -8,7 +8,7 @@ public class Calc:IGame
     private int Num2 { get; set; }
     private char Op { get; set; }
     
-    private int Answer { get; set; }
+    private double Answer { get; set; }
 
     public string GetQuestion()
     {
@@ -17,7 +17,7 @@ public class Calc:IGame
             { '+', (a,b) => a+b },
             { '-', (a,b) => a-b },
             { '*', (a,b) => a*b },
-            { '/', (a,b) => a/b },
+            // { '/', (a,b) => a/b }, # Todo add validator, exclude 0 devide
         };
         
         Random random = new Random();
@@ -31,7 +31,7 @@ public class Calc:IGame
 
     public bool ValidateAnswer(string answer)
     {
-        int.TryParse(answer, out int result);
+        double.TryParse(answer, out double result);
         return result == Answer;
     }
 }
