@@ -22,7 +22,7 @@ jobs:
       run: dotnet restore
 
     - name: Run Tests with Coverage
-      run: dotnet test --no-build --collect:"XPlat Code Coverage" /p:CoverletOutputFormat=cobertura
+      run: dotnet test --collect:"XPlat Code Coverage" /p:CoverletOutputFormat=cobertura
 
     - name: Upload Coverage to Codecov
       uses: codecov/codecov-action@v5
